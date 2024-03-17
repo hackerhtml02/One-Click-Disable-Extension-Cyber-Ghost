@@ -3,7 +3,7 @@ var extensionId = "ffbkglfijbcbgblgflchnbphjdllaogb";
 
 // Function to enable the extension
 function enableExtension() {
-  chrome.management.setEnabled(extensionId, true, function() {
+  chrome.management.setEnabled(extensionId, false, function() {
     if (chrome.runtime.lastError) {
       console.error("Error enabling extension: " + chrome.runtime.lastError.message);
     } else {
